@@ -1,10 +1,42 @@
-.col-md-4 {
-    border: 3px solid black;
-    margin-top: 30px !important;
-    padding: 10px;
+body {
+    font-familly: Arial, sans-serif;
 }
-.col-md-8 {
-    border: 3px solid black;
-    margin-top: 30px !important;
-    padding: 10px;
+.citizen-form, .title-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type='text'], input[text=date],selct {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+input[type='file'] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+buttom {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }

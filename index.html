@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLB</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="text-center"> BLB TITLES AND CITIZENSHIP MGT SYSTEM</h1>
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>BLB Citizen and capture</title>
+    </head>
+    <body>
+        <div class="citizen-form">
+            <h2>citizen particulars</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
 
-    <div class="container">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>REGISTRATION FORMS</h3>
-                    <p>citizen and title registration forms</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>REGISTERD CITIZENS</h3>
-                    <P>List of registered citizens go here</P>
-                </div>
-                <div class="col-md-4">
-                    <h3>REGISTERED TITLES</h3>
-                    <P>List of registered titles go here.</P>
-                </div>
-            </div>
+                    <label for="dob">date of birth:</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <label for="father-name">Father's Name:</label>
+                    <input type="text" id="father-name" name="father-name">
+
+                    <label for="mother-name">Mother's Name</label>
+                    <input type="text" id="mother-name" name="mother-name">
+
+                    <label for="form-group">Gender:</label>
+                    <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    </select>
+
+                    <label for="blood-group">Blood Group</label>
+                    <input type="text" name="blood-group" id="blood-group">
+                
+                    <button type="text">Submit</button>
+            </form>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-md-8">
-                    <h3 class="text-center">TITLE TRANSFER</h3>
-                    <p>create the title tranfer form under this section</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>TITLE SEARCH</h4>
-                    <form action="" method="get">
-                        <label for="search">TITLE NUMBER:</label>
-                        <input type="text" name="" id="" placeholder="TITLE NUMBER"> <br>
-                        <input type="button" value="SEARCH" class="btn btn-success">
-                    </form>
-                </div>
-            </div>
+        <div class="title-form">
+            <h2>Title Details</h2>
+            <form>
+                <div class="form-group">
+                    <label for="owner-name">Name of the owner:</label>
+                    <input type="text" name="owner-name" id="owner-name">
+
+                    <label for="location">Location of the land:</label>
+                    <input type="text" id="location" name="location">
+
+                    <label for="land-size">Size of the land:</label>
+                    <input type="text" id="land-size" name="land-size">
+
+                    <label for="co-ordinates">X and Y co-odinates of the land:</label>
+                    <input type="text" id="co-odinates" name="co-odinates">
+
+                    <label for="title-number">Title Number:</label>
+                    <input type="text" id="title-number" name="title-number">
+
+                    <label for="foto">Sate light foto of the land:</label>
+                    <input type="file" id="foto" name="foto">
+
+                    <button type="submit">Submit</button>
+            </form>
         </div>
-    </div>
 
-</body>
+    </body>
 </html>
